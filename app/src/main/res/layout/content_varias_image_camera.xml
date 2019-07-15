@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="ec.pure.naportec.eir.utils.VariasImageCameraActivity"
+    tools:showIn="@layout/activity_varias_image_camera">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_nombre1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/tv_nombreimage"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:gravity="center"
+            android:textColor="@color/colorAccent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_cambiar1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/text_button_aceptar_img"
+                android:theme="@style/RaisedButtonDark"
+                android:onClick="click_Cambiar"
+                android:layout_weight="0.3"
+                />
+            <Button
+                android:id="@+id/button_nota1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/text_button_nota_img"
+                android:theme="@style/RaisedButtonDark"
+                android:onClick="click_Nota"
+                android:layout_weight="0.7"
+                />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_foto1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="centerCrop"
+            android:src="@drawable/sin_imagen"
+            android:onClick="click_Image"/>
+
+        <TextView
+            android:id="@+id/tv_nombre2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/tv_nombreimage"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:gravity="center"
+            android:textColor="@color/colorAccent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_cambiar2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/text_button_aceptar_img"
+                android:theme="@style/RaisedButtonDark"
+                android:onClick="click_Cambiar"
+                android:layout_weight="0.3"
+                />
+            <Button
+                android:id="@+id/button_nota2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/text_button_nota_img"
+                android:theme="@style/RaisedButtonDark"
+                android:onClick="click_Nota"
+                android:layout_weight="0.7"
+                />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_foto2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="centerCrop"
+            android:src="@drawable/sin_imagen"
+            android:onClick="click_Image"/>
+
+        <TextView
+            android:id="@+id/tv_nombre3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/tv_nombreimage"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:gravity="center"
+            android:textColor="@color/colorAccent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_cambiar3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/text_button_aceptar_img"
+                android:theme="@style/RaisedButtonDark"
+                android:onClick="click_Cambiar"
+                android:layout_weight="0.3"
+                />
+            <Button
+                android:id="@+id/button_nota3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/text_button_nota_img"
+                android:theme="@style/RaisedButtonDark"
+                android:onClick="click_Nota"
+                android:layout_weight="0.7"
+                />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_foto3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="centerCrop"
+            android:src="@drawable/sin_imagen"
+            android:onClick="click_Image"/>
+
+        <TextView
+            android:id="@+id/tv_nombre4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/tv_nombreimage"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:gravity="center"
+            android:textColor="@color/colorAccent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_cambiar4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/text_button_aceptar_img"
+                android:theme="@style/RaisedButtonDark"
+                android:onClick="click_Cambiar"
+                android:layout_weight="0.3"
+                />
+            <Button
+                android:id="@+id/button_nota4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/text_button_nota_img"
+                android:theme="@style/RaisedButtonDark"
+                android:onClick="click_Nota"
+                android:layout_weight="0.7"
+                />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_foto4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="centerCrop"
+            android:src="@drawable/sin_imagen"
+            android:onClick="click_Image"/>
+
+
+        <TextView
+            android:id="@+id/tv_nombre5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/tv_nombreimage"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:gravity="center"
+            android:textColor="@color/colorAccent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_cambiar5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/text_button_aceptar_img"
+                android:theme="@style/RaisedButtonDark"
+                android:onClick="click_Cambiar"
+                android:layout_weight="0.3"
+                />
+            <Button
+                android:id="@+id/button_nota5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/text_button_nota_img"
+                android:theme="@style/RaisedButtonDark"
+                android:onClick="click_Nota"
+                android:layout_weight="0.7"
+                />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_foto5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="centerCrop"
+            android:src="@drawable/sin_imagen"
+            android:onClick="click_Image"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,999 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.mainmenu.inspeccion.menu.encabezado.EncabezadoActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/include"
+            layout="@layout/app_bar_toolbar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/bateria_form"
+            style="@style/personalizado_Linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/include">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColorHint="@color/col_Black">
+
+                <EditText
+                    android:id="@+id/edtx_fecha"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:hint="@string/prompt_fecha"
+                    android:inputType="date"
+                    android:maxLines="2"
+                    android:singleLine="true" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColorHint="@color/col_Black">
+
+                <EditText
+                    android:id="@+id/edtx_noEIR"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:hint="@string/prompt_noEIR"
+                    android:inputType="number"
+                    android:maxLines="2"
+                    android:singleLine="true" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColorHint="@color/col_Black">
+
+                <EditText
+                    android:id="@+id/edtx_noTransaccion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:hint="@string/prompt_noTransaccion"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColorHint="@color/col_Black">
+
+                <EditText
+                    android:id="@+id/edtx_noEntrada"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:hint="@string/prompt_noEntrada"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_contenedor"
+            style="@style/personalizado_Linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bateria_form">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="4dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center|end"
+                    android:text="Size: "
+                    android:textAlignment="textEnd"
+                    android:textAllCaps="true"
+                    android:textColor="@color/col_Black"
+                    android:textSize="18sp"
+                    app:autoSizeTextType="none" />
+
+                <Spinner
+                    android:id="@+id/spn_size"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:entries="@array/size_arrays" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center|end"
+                    android:text="Lleno: "
+                    android:textAlignment="textEnd"
+                    android:textAllCaps="true"
+                    android:textColor="@color/col_Black"
+                    android:textSize="18sp"
+                    app:autoSizeTextType="none" />
+
+                <ToggleButton
+                    android:id="@+id/toggleButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="ToggleButton"
+                    android:textOff="@string/text_NO"
+                    android:textOn="@string/text_SI" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center|end"
+                    android:text="Procedencia: "
+                    android:textAllCaps="true"
+                    android:textColor="@color/col_Black"
+                    android:textSize="18sp" />
+
+                <Spinner
+                    android:id="@+id/spn_procedencia"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:entries="@array/procedencia_arrays" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center|end"
+                    android:text="Contenedor: "
+                    android:textAllCaps="true"
+                    android:textColor="@color/col_Black"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/edt_contenedor"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:maxLength="12"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center|end"
+                    android:text="Peso: "
+                    android:textAllCaps="true"
+                    android:textColor="@color/col_Black"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/edt_peso"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:maxLength="12"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="4dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center|end"
+                    android:text="Sellos: "
+                    android:textAllCaps="true"
+                    android:textColor="@color/col_Black"
+                    android:textSize="18sp"
+                    app:autoSizeTextType="none" />
+
+                <EditText
+                    android:id="@+id/edt_sellos"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:maxLength="100"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="4dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center|end"
+                    android:text="Carga: "
+                    android:textAlignment="textEnd"
+                    android:textAllCaps="true"
+                    android:textColor="@color/col_Black"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/edt_carga"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:maxLength="100"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="4dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center|end"
+                    android:text="Temperatura:"
+                    android:textAlignment="textEnd"
+                    android:textAllCaps="true"
+                    android:textColor="@color/col_Black"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/edt_temperatura"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:maxLength="12"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="4dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center|end"
+                    android:text="Ventilación: "
+                    android:textAlignment="textEnd"
+                    android:textAllCaps="true"
+                    android:textColor="@color/col_Black"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/edt_ventilacion"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:maxLength="12"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="4dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center|end"
+                    android:text="Transportista: "
+                    android:textAlignment="textEnd"
+                    android:textAllCaps="true"
+                    android:textColor="@color/col_Black"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/edt_transportista"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:maxLength="100"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="4dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtv_exportOimport"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center|end"
+
+                    android:textAlignment="textEnd"
+                    android:textAllCaps="true"
+                    android:textColor="@color/col_Black"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/edt_exportOimport"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:maxLength="100"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="4dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center|end"
+                    android:text="Agencia Naviera: "
+                    android:textAlignment="textEnd"
+                    android:textAllCaps="true"
+                    android:textColor="@color/col_Black"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/edt_agencia_naviera"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:maxLength="100"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="4dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center|end"
+                    android:text="Max Gross: "
+                    android:textAlignment="textEnd"
+                    android:textAllCaps="true"
+                    android:textColor="@color/col_Black"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/edt_max_gross"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:maxLength="12"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center|end"
+                    android:text="Tare: "
+                    android:textAllCaps="true"
+                    android:textColor="@color/col_Black"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/edt_tare"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:maxLength="12"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center|end"
+                    android:text="Iso: "
+                    android:textAllCaps="true"
+                    android:textColor="@color/col_Black"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/edt_iso"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:maxLength="12"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center|end"
+                    android:text="Manufactured: "
+                    android:textAlignment="textEnd"
+                    android:textAllCaps="true"
+                    android:textColor="@color/col_Black"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/edt_manofactured"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:maxLength="100"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_chassis"
+            style="@style/personalizado_Linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layout_contenedor">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="4dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center|end"
+                    android:text="Procedencia: "
+                    android:textAlignment="textEnd"
+                    android:textAllCaps="true"
+                    android:textColor="@color/col_Black"
+                    android:textSize="18sp" />
+
+                <Spinner
+                    android:id="@+id/spn_procedencia_chassis"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:entries="@array/procedencia_chassis_arrays" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="4dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center|end"
+                    android:text="Chassis: "
+                    android:textAlignment="textEnd"
+                    android:textAllCaps="true"
+                    android:textColor="@color/col_Black"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/edt_chassis"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:maxLength="50"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="4dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center|end"
+                    android:text="Genset: "
+                    android:textAlignment="textEnd"
+                    android:textAllCaps="true"
+                    android:textColor="@color/col_Black"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/edt_genset"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:maxLength="50"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center|end"
+                    android:text="Conductor: "
+                    android:textAllCaps="true"
+                    android:textColor="@color/col_Black"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/edt_conductor"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:maxLength="100"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="4dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center|end"
+                    android:text="Cédula: "
+                    android:textAllCaps="true"
+                    android:textColor="@color/col_Black"
+                    android:textSize="18sp"
+                    app:autoSizeTextType="none" />
+
+                <EditText
+                    android:id="@+id/edt_cedula"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:maxLength="50"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_genset"
+            style="@style/personalizado_Linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layout_chassis">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtv_hubometro"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/col_Black"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/edt_hubometro"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:maxLength="12"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtv_generador"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+
+                    android:textAllCaps="true"
+                    android:textColor="@color/col_Black"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/edt_generador"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="numberDecimal"
+                    android:maxLength="12"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtv_combustible"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/col_Black"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/edt_combustible"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:maxLength="100"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_booking"
+            style="@style/personalizado_Linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layout_genset">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="4dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center|end"
+                    android:text="No de Booking:"
+                    android:textAlignment="textEnd"
+                    android:textAllCaps="true"
+                    android:textColor="@color/col_Black"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/edt_booking"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:maxLength="50"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="4dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center|end"
+                    android:text="Buque:"
+                    android:textAlignment="textEnd"
+                    android:textAllCaps="true"
+                    android:textColor="@color/col_Black"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/edt_buque"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:maxLength="50"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="4dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center|end"
+                    android:text="Viaje:"
+                    android:textAlignment="textEnd"
+                    android:textAllCaps="true"
+                    android:textColor="@color/col_Black"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/edt_viaje"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:maxLength="50"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="4dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center|end"
+                    android:text="Puerto:"
+                    android:textAlignment="textEnd"
+                    android:textAllCaps="true"
+                    android:textColor="@color/col_Black"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/edt_puerto"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:maxLength="50"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_observacion"
+            style="@style/personalizado_Linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layout_booking">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="4dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center|end"
+                    android:text="Observación: "
+                    android:textAlignment="textEnd"
+                    android:textAllCaps="true"
+                    android:textColor="@color/col_Black"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/edt_observacion"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:maxLength="200"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

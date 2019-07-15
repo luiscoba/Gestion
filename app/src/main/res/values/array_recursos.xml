@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer-array name="array_tab1_nombre_de_imagenes_contenedor">
+        <item>@drawable/a1</item>
+        <item>@drawable/a2</item>
+        <item>@drawable/a3</item>
+        <item>@drawable/a4</item>
+        <item>@drawable/a5</item>
+        <item>@drawable/a6</item>
+        <item>@drawable/a7</item>
+        <item>@drawable/a8</item>
+        <item>@drawable/a9</item>
+    </integer-array>
+    <integer-array name="array_tab2_nombre_de_imagenes_contenedor">
+        <item>@drawable/b1</item>
+        <item>@drawable/b2</item>
+        <item>@drawable/b3</item>
+        <item>@drawable/b4</item>
+        <item>@drawable/b5</item>
+        <item>@drawable/b6</item>
+        <item>@drawable/b7</item>
+        <item>@drawable/b8</item>
+    </integer-array>
+
+    <string-array name="evento_inspeccion">
+        <item>Importación</item>
+        <item>Exportación</item>
+    </string-array>
+
+    <string-array name="lista_de_prueba">
+   <!--
+        <item>Lectura 1 </item>
+        <item>Lectura 2</item>
+        <item>Lectura Data1</item>
+        <item>Lectura Dato1</item>
+        <item>Lectura Data2</item>
+        <item>Lectura valor 2</item>
+        !-->
+    </string-array>
+
+    <string-array name="evento_inspeccion_cerrar_eir">
+        <item>Importación</item>
+        <item>Exportación</item>
+        <item>Cerrar EIR</item>
+    </string-array>
+
+    <string-array name="evento_ubicacion">
+        <item>Ingreso</item>
+        <item>Salida</item>
+        <!--        <item>Ambos</item>  -->
+    </string-array>
+
+    <string-array name="size_arrays">
+        <item>20 </item>
+        <item>40 </item>
+    </string-array>
+
+    <string-array name="procedencia_arrays">
+        <item>Dole </item>
+        <item>Naviera </item>
+        <item>Tercero </item>
+    </string-array>
+
+    <string-array name="procedencia_chassis_arrays">
+        <item>Dole </item>
+        <item>Tercero </item>
+    </string-array>
+
+</resources>

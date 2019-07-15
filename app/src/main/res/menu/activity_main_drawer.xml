@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_ubicacion"
+            android:icon="@drawable/ic_ubication"
+            android:title="@string/nav_ubicacion" />
+        <!--        <item
+                    android:id="@+id/nav_gallery"
+                    android:icon="@drawable/ic_menu_gallery"
+                    android:title="Gallery" />
+                     <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Tools" />
+                -->
+        <item
+            android:id="@+id/nav_sincronizacion"
+            android:icon="@drawable/ic_cloud_sync"
+            android:title="@string/nav_sincronizacion" />
+
+    </group>
+
+    <item android:title="@string/nav_usuario">
+        <menu>
+            <item
+                android:id="@+id/nav_cambiar_usuario"
+                android:icon="@drawable/ic_change_user"
+                android:title="@string/nav_cambiar_usuario" />
+            <item
+                android:id="@+id/nav_cerrar_sesion"
+                android:icon="@drawable/ic_log_out"
+                android:title="@string/nav_cerrar_sesion" />
+        </menu>
+    </item>
+
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_acerca_de"
+                android:icon="@drawable/ic_about"
+                android:title="@string/nav_acerca_de" />
+        </menu>
+    </item>
+
+</menu>

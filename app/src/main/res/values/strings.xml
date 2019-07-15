@@ -1,0 +1,235 @@
+<resources>
+    <string name="app_name">EIR Electrónico</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="nav_sincronizacion">Sincronización</string>
+    <string name="nav_acerca_de">Acerca de</string>
+    <string name="nav_usuario">Usuario</string>
+    <string name="nav_ubicacion">Ubicación</string>
+    <string name="nav_cambiar_usuario">Cambiar usuario</string>
+    <string name="nav_cerrar_sesion">Cerrar sesión</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_ubicacion">UbicacionActivity</string>
+    <string name="title_activity_placa">Ingreso de placa</string>
+    <string name="title_activity_contenedor">Contendor</string>
+    <string name="title_activity_encabezado">Encabezado</string>
+    <string name="title_activity_chassis">Chassis</string>
+    <string name="title_activity_sellos">Sellos</string>
+    <string name="title_activity_taller">Taller</string>
+    <string name="title_activity_revision">Revisión del Contendor</string>
+    <string name="title_activity_patio">Patio</string>
+    <string name="title_activity_tabscontenedor">TabsContendor</string>
+
+    <string name="title_dialogFragment_maltratos">Elegir daño</string>
+    <string name="title_dialogFragment_inspeccion">Elegir evento</string>
+
+    <string name="prompt_usuario">Usuario</string>
+    <string name="prompt_placa">ABC1234</string>
+    <string name="prompt_clave">Clave</string>
+    <string name="prompt_observacion">Observación</string>
+    <string name="prompt_observaciones">OBSERVACIONES</string>
+    <string name="prompt_ventilacion">VENTILACIÓN</string>
+    <string name="prompt_temperatura">TEMPERATURA</string>
+    <string name="prompt_carga">CARGA</string>
+    <string name="prompt_peso">PESO</string>
+    <string name="prompt_destino">DESTINO</string>
+    <string name="prompt_viaje">VIAJE</string>
+    <string name="prompt_barco">BARCO</string>
+    <string name="prompt_noBooking">No. DE BOOKING</string>
+    <string name="prompt_manufactured">MANUFACTURED</string>
+    <string name="prompt_size">SIZE</string>
+    <string name="prompt_elige_size">Elige SIZE</string>
+    <string name="prompt_entrada">ENTRADA</string>
+    <string name="prompt_salida">SALIDA</string>
+    <string name="prompt_combustible">COMBUSTIBLE</string>
+    <string name="prompt_iso">ISO</string>
+    <string name="prompt_tare">TARE</string>
+    <string name="prompt_generador">GENERADOR</string>
+    <string name="prompt_maxGross">MAX GROSS</string>
+    <string name="prompt_agNaviera">AGENCIA NAVIERA</string>
+    <string name="prompt_hubometro">HUBOMETRO</string>
+    <string name="prompt_ExportImport">EXPORTADOR/IMPORTADOR</string>
+    <string name="prompt_transportista">TRANSPORTISTA</string>
+    <string name="prompt_sellos">SELLOS</string>
+    <string name="prompt_noPlaca">No. DE PLACA</string>
+    <string name="prompt_CI">C.I.</string>
+    <string name="prompt_licenciaConductor">LICENCIA DEL CONDUCTOR</string>
+    <string name="prompt_genset">GENSET</string>
+    <string name="prompt_chassis">CHASSIS</string>
+    <string name="prompt_container">CONTAINER</string>
+    <string name="prompt_noEntrada">No. ENTRADA</string>
+    <string name="prompt_noEIR">No. EIR</string>
+    <string name="prompt_noTransaccion">No. DE TRANSACTION</string>
+    <string name="prompt_fecha">FECHA</string>
+
+    <string name="action_iniciar_sesion">Iniciar sesión</string>
+    <string name="action_genera_eir">Generar EIR</string>
+    <string name="action_encabezado">Encabezado</string>
+    <string name="action_contenedor">Contenedor</string>
+    <string name="action_chassis">Chassis</string>
+    <string name="action_sellos">Sellos</string>
+    <string name="action_llantas">Llantas</string>
+    <string name="action_terminar_inspeccion">Terminar inspección</string>
+    <string name="action_asignar_patio">Asignar</string>
+    <string name="action_revisado">Revisado</string>
+    <string name="action_aprobar">Aprobar</string>
+    <string name="action_descartar_eir">Descartar EIR</string>
+
+
+    <string name="error_email_no_valido">Email no válido</string>
+    <string name="error_placa_no_valida">La placa no es válida</string>
+    <string name="error_bateria_vacia">Ingrese nueva batería</string>
+    <string name="error_placa_corta">La placa es muy corta</string>
+    <string name="error_usuario_vacio">Ingrese usuario</string>
+    <string name="error_clave_corta">La clave es muy corta</string>
+    <string name="error_clave_vacio">Ingrese clave</string>
+    <string name="error_clave_incorrecta">Clave incorrecta</string>
+    <string name="error_campo_requerido">Campo obligatorio</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email completions."</string>
+
+    <string name="dialogo_btn_aceptar">aceptar</string>
+    <string name="dialogo_btn_cancelar">cancelar</string>
+    <string name="dialogo_btn_tomar_foto">tomar foto</string>
+
+    <string name="tv_nombreimage">Nombre Imagen</string>
+    <string name="text_acerca_de_eir">Acerca de EIR</string>
+    <string name="text_evento">evento</string>
+    <string name="text_acerca_de_detalle">"EIR ELECTRÓNICO\n"
+    "Versión 0.0.1\n\n"
+    "PureTech 2019\n"
+    "Guayaquil-Ecuador"</string>
+    <string name="text_ingrese_placa">Ingrese la placa del vehículo</string>
+    <string name="text_ingrese_bateria_nueva">Ingrese batería nueva</string>
+    <string name="text_placa_subtitulo">\t\tPLACA &#160;</string>
+    <string name="text_placa">PLACA &#160;</string>
+    <string name="text_bateria">BATERÍA &#160;</string>
+    <string name="text_placa_2_puntos">PLACA: &#160;</string>
+    <string name="text_placa_contenedor"> &#160;placa: &#160;</string>
+    <string name="text_button_aceptar_img">Aceptar Imagen</string>
+
+
+    <string name="text_ud_registra">Ud. registra:&#160;</string><!--aqui insertamos un espacio en blanco al final-->
+    <string name="text_ubicacion">Ubicación: </string>
+    <string name="text_gate">Gate: </string>
+    <string name="text_despacho">DESPACHO</string>
+    <string name="text_taller">TALLER</string>
+    <string name="text_inspeccion">INSPECCIÓN</string>
+    <string name="text_revision_del_contenedor">REVISIÓN DEL CONTENEDOR</string>
+    <string name="text_mecanica">MECÁNICA</string>
+    <string name="text_desc_revision_del_contenedor">Permite revisar el contedor vacío que se ha definido para egresar.</string>
+    <string name="text_desc_inspeccion">Permite realizar la inspección de ingreso y/o egreso de los vehículos  de las distintas ubicaciones.</string>
+    <string name="text_desc_patio">Permite establecer el contenedor asignado en el egreso.</string>
+    <string name="text_desc_taller">Permite dar  el visto bueno al vehículo que va a egresar.</string>
+
+    <string name="text_chassis01">TRAMPA DE ADUANA</string>
+    <string name="text_chassis02">TOMAS DE AIRE MANITO</string>
+    <string name="text_chassis03">TOMAS DE LUZ</string>
+    <string name="text_chassis04">CABLE ENCHUFE/GENSET</string>
+    <string name="text_chassis05">MANIVELA</string>
+    <string name="text_chassis06">PATAS DE CHASSIS</string>
+    <string name="text_chassis07">SEGUROS DE CHASSIS</string>
+    <string name="text_chassis08">LUCES RUTAS LAT.</string>
+    <string name="text_chassis09">TAPACUBOS</string>
+    <string name="text_chassis10">ESPARRAGOS</string>
+    <string name="text_chassis11">TUERCAS RUEDAS</string>
+    <string name="text_chassis12">CHAVETAS</string>
+    <string name="text_chassis13">PERNOS CABEZA DE COCO</string>
+    <string name="text_chassis14">AROS DE RUEDAS</string>
+    <string name="text_chassis15">TANQUE AIRE DE RESERVA</string>
+    <string name="text_chassis16">VALVULAS DE AIRE</string>
+    <string name="text_chassis17">MANGUERAS</string>
+    <string name="text_chassis18">PULMONES/AIRE</string>
+    <string name="text_chassis19">RACHES FRENOS</string>
+    <string name="text_chassis20">LUCES DIREC. POST.</string>
+    <string name="text_chassis21">LUCES STOP POST.</string>
+    <string name="text_chassis22">LODERAS</string>
+    <string name="text_chassis23">PARACHOQUES/POST.</string>
+    <string name="text_chassis24">CABLE/PLUG CONTENEDOR</string>
+
+    <string name="text_NO">NO</string>
+    <string name="text_SI">SI</string>
+
+    <string name="btn_listo">LISTO</string>
+    <string name="text_btn_agregar_bateria">AGREGAR BATERÍA</string>
+    <string name="btn_agregar_bateria">AGREGAR</string>
+    <string name="btn_lector_qr">LECTOR QR</string>
+    <string name="btn_tomar_foto">TOMAR FOTO</string>
+    <string name="btn_ver_fotos">VER FOTOS</string>
+
+    <string name="btn_marca">MARCA</string>
+    <string name="btn_estado">ESTADO</string>
+
+    <string name="text_sello_de_llantas">SELLO DE LLANTAS</string>
+    <string name="text_sello_de_genset">SELLOS DE GENSET</string>
+    <string name="text_sello_baterias">BATERIAS</string>
+    <string name="text_sellos_ief">IEF</string>
+    <string name="text_sellos_def">DEF</string>
+    <string name="text_sellos_iea">IEA</string>
+    <string name="text_sellos_dea">DEA</string>
+    <string name="text_sellos_tanque_diesel1">TANQUE DIESEL 1</string>
+    <string name="text_sellos_tanque_diesel2">TANQUE DIESEL 2</string>
+    <string name="text_sellos_baterias">BATERIAS</string>
+
+    <string name="text_llanta_de_frente">D.E. FRENTE</string>
+    <string name="text_llanta_di_frente">D.I. FRENTE</string>
+    <string name="text_llanta_de_atras">D.E. ATRÁS</string>
+    <string name="text_llanta_di_atras">D.I. ATRÁS</string>
+    <string name="text_llanta_ie_frente">I.E. FRENTE</string>
+    <string name="text_llanta_ii_frente">I.I. FRENTE</string>
+    <string name="text_llanta_ie_atras">I.E. ATRÁS</string>
+    <string name="text_llanta_ii_atras">I.I. ATRÁS</string>
+
+    <string name="text_marca">MARCA</string>
+    <string name="text_posicion">POSICIÓN</string>
+    <string name="text_estado">ESTADO</string>
+
+    <string name="text_fecha">fecha</string>
+    <string name="text_noTransaccion">noTransaccion</string>
+    <string name="text_noEIR">noEIR</string>
+    <string name="text_noEntrada">noEntrada</string>
+
+    <string name="text_autocompletar">COMPLETAR</string>
+
+    <string name="text_seleccion_de_grid_item">texto seleccionado</string>
+
+    <!-- aqui empieza los valores que estan en los otros archivos strings.xml -->
+    <integer name="viewfinder_border_width">4</integer>
+    <integer name="viewfinder_border_length">60</integer>
+    <!-- aqui empieza los valores que estan en los otros archivos strings.xml -->
+
+
+    <!-- Scanner QR -->
+    <string name="scanner_activity">Lector QR</string>
+    <string name="flash_on">Flash [ON]</string>
+    <string name="flash_off">Flash [OFF]</string>
+    <string name="auto_focus_on">Auto Focus [ON]</string>
+    <string name="auto_focus_off">Auto Focus [OFF]</string>
+    <string name="formats">Formats</string>
+    <string name="choose_formats">Choose Formats</string>
+    <string name="select_camera">Select a Camera</string>
+    <string name="ok_button">OK</string>
+    <string name="cancel_button">Cancel</string>
+
+    <!-- Camara Activity -->
+    <string name="appbar_scrolling_view_behavior" translatable="false">com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior</string>
+    <string name="text_button_nota_img">Nota</string>
+    <string name="title_activity_varias_image_camera">Capturas de Varias Fotografias</string>
+    <string name="text_size">size</string>
+    <string name="text_peso">peso</string>
+    <string name="text_sellos">sellos</string>
+    <string name="text_carga">carga</string>
+    <string name="text_temperatura">temperatura</string>
+    <string name="text_buscar">BUSCAR</string>
+    <string name="text_cancelar">CANCELAR</string>
+    <string name="text_aceptar">ACEPTAR</string>
+    <string name="error_input_vacio">ingrese algún valor</string>
+    <string name="text_agregar_nuevo_valor">Agregar nuevo valor...</string>
+    <string name="text_seleccione_un_valor">Seleccione un valor...</string>
+
+</resources>

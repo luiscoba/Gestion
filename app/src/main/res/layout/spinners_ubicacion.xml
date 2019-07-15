@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layout_ubicacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/text_ubicacion"
+            android:textColor="@color/col_Black"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/spn_ubicacion"
+            style="@style/personalizado_spinner_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="3dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_gate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/text_gate"
+            android:textColor="@color/col_Black"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/spn_gate"
+            style="@style/personalizado_spinner_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="3dp" />
+    </LinearLayout>
+
+</LinearLayout>

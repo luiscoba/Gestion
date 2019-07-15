@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/mn_eliminar1"     android:title="Eliminar Imagen 1"
+        android:icon="@drawable/ic_delete"></item>
+    <item android:id="@+id/mn_galeria1"     android:title="Galeria Imagen 1"
+        ></item>
+    <item android:id="@+id/mn_eliminar2"     android:title="Eliminar Imagen 2"
+        android:icon="@drawable/ic_delete"></item>
+    <item android:id="@+id/mn_galeria2"     android:title="Galeria Imagen 2"
+        ></item>
+    <item android:id="@+id/mn_eliminar3"     android:title="Eliminar Imagen 3"
+        android:icon="@drawable/ic_delete"></item>
+    <item android:id="@+id/mn_galeria3"     android:title="Galeria Imagen 3"
+        ></item>
+    <item android:id="@+id/mn_eliminar4"     android:title="Eliminar Imagen 4"
+        android:icon="@drawable/ic_delete"></item>
+    <item android:id="@+id/mn_galeria4"     android:title="Galeria Imagen 4"
+        ></item>
+    <item android:id="@+id/mn_eliminar5"     android:title="Eliminar Imagen 5"
+        android:icon="@drawable/ic_delete"></item>
+    <item android:id="@+id/mn_galeria5"     android:title="Galeria Imagen 5"
+        ></item>
+
+</menu>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/profile_ll_friends"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.mainmenu.inspeccion.menu.contenedor.tabs_fragments.Tab2Fragment">
+
+    <GridView
+        android:id="@+id/grid_imagen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/col_White"
+        android:gravity="center"
+        android:horizontalSpacing="1dp"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="1dp" />
+
+</LinearLayout>

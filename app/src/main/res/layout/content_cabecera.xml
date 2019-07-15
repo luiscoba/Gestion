@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    style="@style/personalizado_Linear_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:weightSum="4">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColorHint="@color/col_Black">
+
+        <EditText
+            android:id="@+id/edtx_fecha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:focusable="false"
+            android:gravity="center"
+            android:hint="@string/prompt_fecha"
+            android:inputType="date"
+            android:maxLines="2"
+            android:singleLine="true" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColorHint="@color/col_Black">
+
+        <EditText
+            android:id="@+id/edtx_noEIR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:focusable="false"
+            android:gravity="center"
+            android:hint="@string/prompt_noEIR"
+            android:inputType="number"
+            android:maxLines="2"
+            android:singleLine="true" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColorHint="@color/col_Black">
+
+        <EditText
+            android:id="@+id/edtx_noTransaccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:focusable="false"
+            android:gravity="center"
+            android:hint="@string/prompt_noTransaccion"
+            android:maxLines="1"
+            android:singleLine="true" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColorHint="@color/col_Black">
+
+        <EditText
+            android:id="@+id/edtx_noEntrada"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:focusable="false"
+            android:gravity="center"
+            android:hint="@string/prompt_noEntrada"
+            android:inputType="number"
+            android:maxLines="1"
+            android:singleLine="true" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+</LinearLayout>

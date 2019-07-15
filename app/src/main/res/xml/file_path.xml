@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<path xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--    <external-path name="SalesTrack" path="Android/data/ec.pure.salestrack/files/Pictures" />
+    -->
+    <external-path
+        name="naportec_eir"
+        path="eir_imagenes" />
+
+</path>

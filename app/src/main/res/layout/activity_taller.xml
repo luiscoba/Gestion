@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.mainmenu.taller.TallerActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/include_toolbar"
+            layout="@layout/app_bar_toolbar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <include
+            android:id="@+id/include_cabecera"
+            layout="@layout/content_cabecera"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/include_toolbar"
+
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/include_toolbar" />
+
+        <LinearLayout
+            android:id="@+id/layout_booking"
+            style="@style/personalizado_Linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/include_cabecera">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center|end"
+                    android:text="Size:"
+                    android:textAlignment="textEnd"
+                    android:textAllCaps="true"
+                    android:textColor="@color/col_Black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/txv_size"
+                    android:layout_width="0dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:maxLength="50"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center|end"
+                    android:text="Lleno:"
+                    android:textAlignment="textEnd"
+                    android:textAllCaps="true"
+                    android:textColor="@color/col_Black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/txv_lleno"
+                    android:layout_width="0dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:maxLength="50"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="4dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center|end"
+                    android:text="No de Booking:"
+                    android:textAlignment="textEnd"
+                    android:textAllCaps="true"
+                    android:textColor="@color/col_Black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/edt_booking"
+                    android:layout_width="0dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:maxLength="50"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center|end"
+                    android:text="Buque:"
+                    android:textAlignment="textEnd"
+                    android:textAllCaps="true"
+                    android:textColor="@color/col_Black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/edt_buque"
+                    android:layout_width="0dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:maxLength="50"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="4dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center|end"
+                    android:text="Viaje:"
+                    android:textAlignment="textEnd"
+                    android:textAllCaps="true"
+                    android:textColor="@color/col_Black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/edt_viaje"
+                    android:layout_width="0dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:maxLength="50"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center|end"
+                    android:text="Puerto:"
+                    android:textAlignment="textEnd"
+                    android:textAllCaps="true"
+                    android:textColor="@color/col_Black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/edt_puerto"
+                    android:layout_marginStart="4dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:maxLength="50"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center|end"
+                    android:text="Contenedor:"
+                    android:textAlignment="textEnd"
+                    android:textAllCaps="true"
+                    android:textColor="@color/col_Black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/edt_contenedor"
+                    android:layout_width="0dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:maxLength="50"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center|end"
+                    android:text="Procedencia:"
+                    android:textAlignment="textEnd"
+                    android:textAllCaps="true"
+                    android:textColor="@color/col_Black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/txv_procedencia"
+                    android:layout_width="0dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:maxLength="50"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_contenedor"
+            style="@style/personalizado_Linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layout_booking">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="4dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center|end"
+                    android:text="Comentario:"
+                    android:textAlignment="textEnd"
+                    android:textAllCaps="true"
+                    android:textColor="@color/col_Black"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/edt_comentario"
+                    android:layout_marginStart="4dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:maxLength="50"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="32dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layout_contenedor">
+
+            <Button
+                android:id="@+id/btn_aprobar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/boton_personalizado"
+                android:text="@string/action_aprobar" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
